@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bento Grid — Адвокати Лейб’юк Оксана Василівна та Богдан Богданович</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="bento-shell">
+    <div class="bento-grid">
+      <!-- 1. HERO / BRAND CARD (wide) -->
+      <section class="bento-card card-hero">
+        <div class="hero-top">
+          <span class="monogram">Л &amp; Л</span>
+          <span class="code-pill">КОЛОМИЯ · АДВОКАТСЬКА ПРАКТИКА</span>
+        </div>
+        <h1 class="hero-title">
+          Адвокати <em>Лейб’юк Оксана Василівна</em> та <em>Лейб’юк Богдан Богданович</em>
+        </h1>
+        <p class="hero-slogan">
+          Всі види юридичних та адвокатських послуг. Професійний захист ваших прав та інтересів.
+        </p>
+        <div class="hero-quick">
+          <a href="tel:+380965557935" class="quick-btn quick-btn-dark">Швидкий дзвінок</a>
+          <a href="#bento-services" class="quick-btn quick-btn-gold">Знайти послугу ↓</a>
+        </div>
+      </section>
+
+      <!-- 2. THEMIS PARALLAX CARD (tall dark) -->
+      <section class="bento-card card-themis" id="themis-card" aria-label="Символ правосуддя Феміда">
+        <div class="card-meta">
+          <span>JUSTITIA · § 00</span>
+          <span class="parallax-hint">Рухайте курсором</span>
+        </div>
+        <div class="themis-stage" id="themis-stage" aria-hidden="true">
+          <svg viewBox="0 0 280 340" fill="none" xmlns="http://www.w3.org/2000/svg" class="themis-svg">
+            <!-- Layer 1: Halo (deep parallax) -->
+            <g class="p-layer" data-depth="0.45">
+              <circle cx="140" cy="108" r="78" stroke="#C5A059" stroke-opacity="0.32" stroke-width="1"/>
+              <circle cx="140" cy="108" r="56" stroke="#C5A059" stroke-opacity="0.22" stroke-width="0.8" stroke-dasharray="3 4"/>
+              <line x1="22" y1="296" x2="258" y2="296" stroke="#C5A059" stroke-opacity="0.45" stroke-width="1"/>
+            </g>
+
+            <!-- Layer 2: Figure (mid parallax) -->
+            <g class="p-layer" data-depth="0.9">
+              <path d="M128 84 C128 71 152 71 152 84 C152 96 146 104 140 104 C134 104 128 96 128 84 Z" stroke="#FAF7F2" stroke-width="1.3"/>
+              <path d="M127 81 Q140 85 153 81 L153 88 Q140 92 127 88 Z" fill="#C5A059" fill-opacity="0.3" stroke="#C5A059" stroke-width="1.2"/>
+              <path d="M153 84 C164 87 170 93 174 100" stroke="#C5A059" stroke-width="1" stroke-linecap="round"/>
+
+              <path d="M134 104 L134 115 M146 104 L146 115" stroke="#FAF7F2" stroke-width="1.1"/>
+              <path d="M134 115 C118 119 108 128 102 140 L92 296 L188 296 L178 140 C172 128 162 119 146 115" stroke="#FAF7F2" stroke-opacity="0.88" stroke-width="1.25"/>
+              <path d="M106 174 Q140 184 174 174" stroke="#C5A059" stroke-width="1.35"/>
+              <path d="M124 180 C120 224 116 260 112 296" stroke="#FAF7F2" stroke-opacity="0.45" stroke-width="1"/>
+              <path d="M140 182 L140 296" stroke="#FAF7F2" stroke-opacity="0.55" stroke-width="1"/>
+              <path d="M156 180 C160 224 164 260 168 296" stroke="#FAF7F2" stroke-opacity="0.45" stroke-width="1"/>
+            </g>
+
+            <!-- Layer 3: Scales & Sword (foreground parallax) -->
+            <g class="p-layer" data-depth="1.55">
+              <!-- Scales left -->
+              <line x1="102" y1="140" x2="64" y2="136" stroke="#FAF7F2" stroke-width="1.2" stroke-linecap="round"/>
+              <circle cx="62" cy="136" r="3" stroke="#C5A059" stroke-width="1.2"/>
+              <line x1="62" y1="139" x2="62" y2="156" stroke="#C5A059" stroke-width="1.2"/>
+              <line x1="28" y1="156" x2="96" y2="156" stroke="#C5A059" stroke-width="1.5" stroke-linecap="round"/>
+              <line x1="28" y1="156" x2="18" y2="196" stroke="#C5A059" stroke-width="0.9"/>
+              <line x1="28" y1="156" x2="38" y2="196" stroke="#C5A059" stroke-width="0.9"/>
+              <path d="M15 196 Q28 208 41 196 Z" stroke="#C5A059" stroke-width="1.2" fill="#C5A059" fill-opacity="0.18"/>
+              <line x1="96" y1="156" x2="86" y2="196" stroke="#C5A059" stroke-width="0.9"/>
+              <line x1="96" y1="156" x2="106" y2="196" stroke="#C5A059" stroke-width="0.9"/>
+              <path d="M83 196 Q96 208 109 196 Z" stroke="#C5A059" stroke-width="1.2" fill="#C5A059" fill-opacity="0.18"/>
+
+              <!-- Sword right -->
+              <line x1="178" y1="140" x2="212" y2="182" stroke="#FAF7F2" stroke-width="1.2" stroke-linecap="round"/>
+              <line x1="212" y1="166" x2="212" y2="192" stroke="#C5A059" stroke-width="2" stroke-linecap="round"/>
+              <path d="M198 192 Q212 196 226 192" stroke="#C5A059" stroke-width="1.6" stroke-linecap="round"/>
+              <path d="M209 194 L212 296 L215 194" stroke="#C5A059" stroke-width="1.2" fill="#C5A059" fill-opacity="0.14"/>
+            </g>
+          </svg>
+        </div>
+        <div class="themis-caption">
+          <span>Л &amp; Л · Правосуддя та захист</span>
+        </div>
+      </section>
+
+      <!-- 3. FLIP CARD: OKSANA -->
+      <section class="bento-card card-flip-wrap" data-flip-card>
+        <div class="flip-inner">
+          <div class="flip-face flip-front flip-front-cream">
+            <div class="card-meta">
+              <span>ПАРТНЕР · 01</span>
+              <span class="flip-cue">Натисніть для деталей ↻</span>
+            </div>
+            <div class="partner-badge-lg">О. В. Л.</div>
+            <h2 class="partner-name">Лейб’юк Оксана Василівна</h2>
+            <p class="partner-brief">Сімейні спори, цивільні та земельні справи, юридичний супровід.</p>
+            <button type="button" class="flip-trigger" aria-label="Показати деталі спеціалізації Оксани Василівни">
+              Детальніше про спеціалізацію →
+            </button>
+          </div>
+
+          <div class="flip-face flip-back flip-back-dark">
+            <div class="card-meta">
+              <span>СПЕЦІАЛІЗАЦІЯ · О. В. Л.</span>
+              <span class="flip-cue">Згорнути ↺</span>
+            </div>
+            <h3>Ключові напрямки</h3>
+            <ul class="flip-list">
+              <li>Сімейні спори: розлучення, поділ майна, аліменти</li>
+              <li>Цивільні, спадкові та земельні справи</li>
+              <li>Реєстрація, ліквідація та супровід підприємств</li>
+              <li>Підготовка об'єктів до аукціонів</li>
+            </ul>
+            <a href="tel:+380965557935" class="flip-phone" data-no-flip>+380 96 555 79 35</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- 4. FLIP CARD: BOHDAN -->
+      <section class="bento-card card-flip-wrap" data-flip-card>
+        <div class="flip-inner">
+          <div class="flip-face flip-front flip-front-gray">
+            <div class="card-meta">
+              <span>ПАРТНЕР · 02</span>
+              <span class="flip-cue">Натисніть для деталей ↻</span>
+            </div>
+            <div class="partner-badge-lg">Б. Б. Л.</div>
+            <h2 class="partner-name">Лейб’юк Богдан Богданович</h2>
+            <p class="partner-brief">Військові справи (військовий адвокат), кримінальні, господарські та корпоративні спори.</p>
+            <button type="button" class="flip-trigger" aria-label="Показати деталі спеціалізації Богдана Богдановича">
+              Детальніше про спеціалізацію →
+            </button>
+          </div>
+
+          <div class="flip-face flip-back flip-back-dark">
+            <div class="card-meta">
+              <span>СПЕЦІАЛІЗАЦІЯ · Б. Б. Л.</span>
+              <span class="flip-cue">Згорнути ↺</span>
+            </div>
+            <h3>Ключові напрямки</h3>
+            <ul class="flip-list">
+              <li>Військові справи та захист військовослужбовців</li>
+              <li>Захист у кримінальних провадженнях</li>
+              <li>Господарські та корпоративні спори</li>
+              <li>Представництво в судах усіх інстанцій</li>
+            </ul>
+            <a href="tel:+380961057533" class="flip-phone" data-no-flip>+380 96 105 75 33</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- 5. SERVICES CARD WITH LIVE FILTER & SEARCH (wide) -->
+      <section class="bento-card card-services" id="bento-services">
+        <div class="services-head">
+          <div>
+            <span class="card-kicker">РЕЄСТР ПОСЛУГ · СТ. 01–06</span>
+            <h2 class="section-heading">Послуги та напрямки захисту</h2>
+          </div>
+
+          <div class="search-box">
+            <input
+              type="search"
+              id="service-search"
+              class="search-input"
+              placeholder="Пошук послуги (напр. військові, аукціони)..."
+              aria-label="Пошук юридичних послуг"
+            >
+          </div>
+        </div>
+
+        <div class="tag-bar" role="group" aria-label="Фільтр послуг за тегами">
+          <button type="button" class="tag-btn is-active" data-tag="all">Усі (6)</button>
+          <button type="button" class="tag-btn" data-tag="military">Військові</button>
+          <button type="button" class="tag-btn" data-tag="family">Сім’я та земля</button>
+          <button type="button" class="tag-btn" data-tag="courts">Суди</button>
+          <button type="button" class="tag-btn" data-tag="business">Бізнес та аукціони</button>
+          <button type="button" class="tag-btn" data-tag="consult">Консультації</button>
+        </div>
+
+        <div class="services-list" id="services-list">
+          <article class="srv-item" data-tags="military courts">
+            <span class="srv-code">СТ. 01</span>
+            <div>
+              <h3>Військові справи та захист військовослужбовців</h3>
+              <p>Оскарження ВЛК, питання виплат, звільнення зі служби та правовий супровід родин військових.</p>
+            </div>
+          </article>
+
+          <article class="srv-item" data-tags="family courts">
+            <span class="srv-code">СТ. 02</span>
+            <div>
+              <h3>Сімейні та земельні спори</h3>
+              <p>Поділ майна, аліменти, спадкові справи, визнання права власності та земельні межі.</p>
+            </div>
+          </article>
+
+          <article class="srv-item" data-tags="courts business">
+            <span class="srv-code">СТ. 03</span>
+            <div>
+              <h3>Ведення кримінальних, цивільних, господарських та корпоративних справ</h3>
+              <p>Комплексне представництво та захист інтересів клієнтів у судах усіх інстанцій.</p>
+            </div>
+          </article>
+
+          <article class="srv-item" data-tags="business">
+            <span class="srv-code">СТ. 04</span>
+            <div>
+              <h3>Реєстрація, ліквідація та комплексний юридичний супровід підприємств</h3>
+              <p>Створення компаній, договірна робота, корпоративні зміни та юридичний супровід бізнесу.</p>
+            </div>
+          </article>
+
+          <article class="srv-item" data-tags="business">
+            <span class="srv-code">СТ. 05</span>
+            <div>
+              <h3>Підготовка об'єктів до аукціонів</h3>
+              <p>Правовий аудит активів, перевірка обтяжень і підготовка повного пакета документів до торгів.</p>
+            </div>
+          </article>
+
+          <article class="srv-item" data-tags="consult military family business courts">
+            <span class="srv-code">СТ. 06</span>
+            <div>
+              <h3>Широкий спектр індивідуальних адвокатських консультацій</h3>
+              <p>Особистий чи дистанційний аналіз ситуації, перевірка документів і чіткий план дій.</p>
+            </div>
+          </article>
+        </div>
+
+        <p class="services-empty" id="services-empty" hidden>
+          За вашим запитом послуг не знайдено. Спробуйте інше слово або оберіть «Усі».
+        </p>
+      </section>
+
+      <!-- 6. CONTACTS CARD WITH 1-CLICK COPY & TOAST -->
+      <section class="bento-card card-contacts">
+        <span class="card-kicker">ПРЯМИЙ ЗВ’ЯЗОК · КОПІЮВАННЯ В 1 КЛІК</span>
+        <h2 class="section-heading">Контакти</h2>
+
+        <div class="copy-list">
+          <div class="copy-row">
+            <div>
+              <span class="copy-label">Телефон 1 · Оксана Василівна</span>
+              <a href="tel:+380965557935" class="copy-val">+380 96 555 79 35</a>
+            </div>
+            <button type="button" class="copy-btn" data-copy="+380 96 555 79 35" aria-label="Скопіювати номер +380 96 555 79 35">
+              Копіювати
+            </button>
+          </div>
+
+          <div class="copy-row">
+            <div>
+              <span class="copy-label">Телефон 2 · Богдан Богданович</span>
+              <a href="tel:+380961057533" class="copy-val">+380 96 105 75 33</a>
+            </div>
+            <button type="button" class="copy-btn" data-copy="+380 96 105 75 33" aria-label="Скопіювати номер +380 96 105 75 33">
+              Копіювати
+            </button>
+          </div>
+
+          <div class="copy-row">
+            <div>
+              <span class="copy-label">Електронна пошта</span>
+              <a href="mailto:ksyha1755@ukr.net" class="copy-val">ksyha1755@ukr.net</a>
+            </div>
+            <button type="button" class="copy-btn" data-copy="ksyha1755@ukr.net" aria-label="Скопіювати електронну пошту">
+              Копіювати
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- 7. INTERACTIVE ADDRESS CARD -->
+      <section class="bento-card card-address">
+        <div class="address-top">
+          <span class="card-kicker">ЛОКАЦІЯ ОФІСУ</span>
+          <span class="pin-badge">Коломия</span>
+        </div>
+
+        <h2 class="address-title">м. Коломия, Івано-Франківська обл., вулиця Мазепи, 37а</h2>
+
+        <div class="address-map-art" aria-hidden="true">
+          <svg viewBox="0 0 320 96" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <line x1="0" y1="24" x2="320" y2="24" stroke="#C5A059" stroke-opacity="0.22" stroke-width="1"/>
+            <line x1="0" y1="68" x2="320" y2="68" stroke="#C5A059" stroke-opacity="0.22" stroke-width="1"/>
+            <line x1="84" y1="0" x2="84" y2="96" stroke="#C5A059" stroke-opacity="0.22" stroke-width="1"/>
+            <line x1="210" y1="0" x2="210" y2="96" stroke="#C5A059" stroke-opacity="0.22" stroke-width="1"/>
+            <path d="M20 78 L148 48 L300 32" stroke="#C5A059" stroke-width="1.6" stroke-dasharray="4 4"/>
+            <circle cx="148" cy="48" r="14" stroke="#C5A059" stroke-opacity="0.45" stroke-width="1"/>
+            <circle cx="148" cy="48" r="5" fill="#C5A059"/>
+            <text x="168" y="45" font-family="Manrope, sans-serif" font-size="10" fill="#EAE3D5" letter-spacing="1">ВУЛ. МАЗЕПИ, 37А</text>
+          </svg>
+        </div>
+
+        <div class="address-actions">
+          <button
+            type="button"
+            class="addr-btn"
+            data-copy="м. Коломия, Івано-Франківська обл., вулиця Мазепи, 37а"
+          >
+            Скопіювати адресу
+          </button>
+          <a
+            href="https://www.google.com/maps/search/?api=1&query=%D0%BC.+%D0%9A%D0%BE%D0%BB%D0%BE%D0%BC%D0%B8%D1%8F,+%D0%B2%D1%83%D0%BB%D0%B8%D1%86%D1%8F+%D0%9C%D0%B0%D0%B7%D0%B5%D0%BF%D0%B8,+37%D0%B0"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="addr-link"
+          >
+            Відкрити на карті ↗
+          </a>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- CREAM & GOLD TOAST -->
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <button type="button" class="exit-demo-btn" id="exit-demo-btn">Вийти з демо</button>
+
+  <script src="script.js"></script>
+</body>
+</html>

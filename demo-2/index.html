@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Презентація — Адвокати Лейб’юк Оксана Василівна та Лейб’юк Богдан Богданович</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-theme="dark">
+  <!-- Minimal Top Monogram -->
+  <div class="corner-brand" aria-hidden="true">
+    <span class="corner-monogram">Л &amp; Л</span>
+    <span class="corner-city">Коломия</span>
+  </div>
+
+  <!-- Slide Counter -->
+  <div class="slide-counter" aria-live="polite">
+    <span id="current-num">01</span>
+    <span class="counter-sep">/</span>
+    <span>04</span>
+  </div>
+
+  <!-- Side Anchor Navigation (compact top bar on mobile) -->
+  <nav class="slide-nav" aria-label="Навігація по слайдах">
+    <a href="#slide-1" class="slide-link is-active" data-slide="0">
+      <span class="link-num">01</span>
+      <span class="link-label">Титул</span>
+      <span class="link-dot" aria-hidden="true"></span>
+    </a>
+    <a href="#slide-2" class="slide-link" data-slide="1">
+      <span class="link-num">02</span>
+      <span class="link-label">Адвокати</span>
+      <span class="link-dot" aria-hidden="true"></span>
+    </a>
+    <a href="#slide-3" class="slide-link" data-slide="2">
+      <span class="link-num">03</span>
+      <span class="link-label">Послуги</span>
+      <span class="link-dot" aria-hidden="true"></span>
+    </a>
+    <a href="#slide-4" class="slide-link" data-slide="3">
+      <span class="link-num">04</span>
+      <span class="link-label">Контакти</span>
+      <span class="link-dot" aria-hidden="true"></span>
+    </a>
+  </nav>
+
+  <!-- Deck Container -->
+  <main class="deck" id="deck">
+    <!-- SLIDE 1: TITLE & THEMIS -->
+    <section class="slide slide-dark is-active" id="slide-1" data-theme="dark" aria-label="Титульний екран">
+      <div class="slide-inner hero-slide">
+        <div class="hero-copy">
+          <p class="slide-eyebrow">АДВОКАТСЬКА ПРАКТИКА · М. КОЛОМИЯ</p>
+          <h1 class="hero-title">
+            Адвокати <em>Лейб’юк Оксана Василівна</em> та <em>Лейб’юк Богдан Богданович</em>
+          </h1>
+          <div class="gold-line"></div>
+          <p class="hero-slogan">
+            Всі види юридичних та адвокатських послуг. Професійний захист ваших прав та інтересів.
+          </p>
+          <div class="hero-actions">
+            <a href="tel:+380965557935" class="action-btn action-gold">Зателефонувати</a>
+            <button type="button" class="action-btn action-ghost" id="next-slide-btn">Далі: Адвокати ↓</button>
+          </div>
+        </div>
+
+        <div class="hero-themis" aria-hidden="true">
+          <svg viewBox="0 0 340 440" fill="none" xmlns="http://www.w3.org/2000/svg" class="themis-art">
+            <circle cx="170" cy="126" r="88" stroke="#C5A059" stroke-opacity="0.28" stroke-width="0.9"/>
+            <circle cx="170" cy="126" r="64" stroke="#C5A059" stroke-opacity="0.18" stroke-width="0.75" stroke-dasharray="3 5"/>
+            <line x1="170" y1="20" x2="170" y2="54" stroke="#C5A059" stroke-opacity="0.55" stroke-width="1"/>
+
+            <!-- Head & Blindfold -->
+            <path d="M158 96 C158 83 182 83 182 96 C182 108 176 117 170 117 C164 117 158 108 158 96 Z" stroke="#C5A059" stroke-width="1.3"/>
+            <path d="M155 94 C155 78 164 72 170 72 C176 72 185 78 185 94" stroke="#FAF7F2" stroke-opacity="0.7" stroke-width="1.1"/>
+            <path d="M157 93 Q170 97 183 93 L183 100 Q170 104 157 100 Z" fill="#C5A059" fill-opacity="0.28" stroke="#C5A059" stroke-width="1.2"/>
+            <path d="M183 96 C195 99 201 106 206 114" stroke="#C5A059" stroke-width="1" stroke-linecap="round"/>
+
+            <!-- Shoulders & Arms -->
+            <path d="M164 117 L164 130 M176 117 L176 130" stroke="#C5A059" stroke-width="1.1"/>
+            <path d="M164 130 C148 134 136 142 128 154 C114 162 98 160 88 150" stroke="#FAF7F2" stroke-opacity="0.85" stroke-width="1.25" stroke-linecap="round"/>
+            <path d="M176 130 C192 134 204 142 214 154 C226 172 236 196 242 218" stroke="#FAF7F2" stroke-opacity="0.85" stroke-width="1.25" stroke-linecap="round"/>
+
+            <!-- Scales -->
+            <circle cx="86" cy="151" r="3.5" stroke="#C5A059" stroke-width="1.3"/>
+            <line x1="86" y1="155" x2="86" y2="174" stroke="#C5A059" stroke-width="1.2"/>
+            <line x1="46" y1="174" x2="126" y2="174" stroke="#C5A059" stroke-width="1.5" stroke-linecap="round"/>
+            <line x1="46" y1="174" x2="34" y2="218" stroke="#C5A059" stroke-width="0.95"/>
+            <line x1="46" y1="174" x2="58" y2="218" stroke="#C5A059" stroke-width="0.95"/>
+            <path d="M31 218 Q46 230 61 218 Z" stroke="#C5A059" stroke-width="1.2" fill="#C5A059" fill-opacity="0.16"/>
+            <line x1="126" y1="174" x2="114" y2="218" stroke="#C5A059" stroke-width="0.95"/>
+            <line x1="126" y1="174" x2="138" y2="218" stroke="#C5A059" stroke-width="0.95"/>
+            <path d="M111 218 Q126 230 141 218 Z" stroke="#C5A059" stroke-width="1.2" fill="#C5A059" fill-opacity="0.16"/>
+
+            <!-- Sword -->
+            <line x1="242" y1="202" x2="242" y2="232" stroke="#C5A059" stroke-width="2" stroke-linecap="round"/>
+            <path d="M227 232 Q242 236 257 232" stroke="#C5A059" stroke-width="1.7" stroke-linecap="round"/>
+            <path d="M239 234 L242 384 L245 234" stroke="#C5A059" stroke-width="1.2" fill="#C5A059" fill-opacity="0.12"/>
+
+            <!-- Robe -->
+            <path d="M138 154 L132 226 C126 278 118 334 108 392 L222 392 C212 334 206 278 202 226 L202 154" stroke="#FAF7F2" stroke-opacity="0.85" stroke-width="1.25"/>
+            <path d="M134 202 Q170 214 204 200" stroke="#C5A059" stroke-width="1.3"/>
+            <path d="M148 214 C142 272 136 332 128 392" stroke="#FAF7F2" stroke-opacity="0.45" stroke-width="1"/>
+            <path d="M166 216 C164 278 162 336 158 392" stroke="#FAF7F2" stroke-opacity="0.55" stroke-width="1"/>
+            <path d="M184 215 C186 278 190 336 194 392" stroke="#FAF7F2" stroke-opacity="0.45" stroke-width="1"/>
+            <line x1="88" y1="392" x2="252" y2="392" stroke="#C5A059" stroke-width="1.3"/>
+            <text x="170" y="416" text-anchor="middle" font-family="Cormorant Garamond, Georgia, serif" font-size="11" letter-spacing="5" fill="#C5A059">JUSTITIA · Л &amp; Л</text>
+          </svg>
+        </div>
+      </div>
+
+      <div class="scroll-hint" aria-hidden="true">
+        <span>Прокрутіть або скористайтесь стрілками</span>
+      </div>
+    </section>
+
+    <!-- SLIDE 2: PARTNERS -->
+    <section class="slide slide-light" id="slide-2" data-theme="light" aria-label="Адвокати та спеціалізація">
+      <div class="slide-inner">
+        <div class="slide-header">
+          <p class="slide-eyebrow">СЛАЙД 02 · ПАРТНЕРИ</p>
+          <h2 class="slide-title">Адвокати та їхній фокус роботи</h2>
+        </div>
+
+        <div class="partners-split">
+          <article class="partner-panel">
+            <div class="panel-meta">
+              <span>ПАРТНЕР 01</span>
+              <span class="panel-tag">Цивільне · Сімейне · Земельне</span>
+            </div>
+            <h3>Лейб’юк Оксана Василівна</h3>
+            <div class="gold-line"></div>
+            <p class="panel-text">
+              Сімейні спори, цивільні та земельні справи, комплексний юридичний супровід фізичних осіб і бізнесу.
+            </p>
+            <ul class="panel-points">
+              <li>Сімейні спори, поділ майна та захист прав дитини</li>
+              <li>Цивільні та земельні спори, оформлення власності</li>
+              <li>Юридичний супровід підприємств та підготовка до аукціонів</li>
+            </ul>
+            <a href="tel:+380965557935" class="panel-phone">+380 96 555 79 35</a>
+          </article>
+
+          <article class="partner-panel partner-panel-ink">
+            <div class="panel-meta">
+              <span>ПАРТНЕР 02</span>
+              <span class="panel-tag">Військовий адвокат · Кримінальне · Корпоративне</span>
+            </div>
+            <h3>Лейб’юк Богдан Богданович</h3>
+            <div class="gold-line"></div>
+            <p class="panel-text">
+              Військові справи (військовий адвокат), кримінальні провадження, господарські та корпоративні спори.
+            </p>
+            <ul class="panel-points">
+              <li>Військові справи та захист прав військовослужбовців</li>
+              <li>Захист у кримінальних справах на всіх етапах</li>
+              <li>Господарські, договірні та корпоративні спори</li>
+            </ul>
+            <a href="tel:+380961057533" class="panel-phone">+380 96 105 75 33</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SLIDE 3: SERVICES -->
+    <section class="slide slide-cream" id="slide-3" data-theme="light" aria-label="Послуги та напрямки захисту">
+      <div class="slide-inner">
+        <div class="slide-header">
+          <p class="slide-eyebrow">СЛАЙД 03 · ПРАКТИКА</p>
+          <h2 class="slide-title">Послуги та напрямки захисту</h2>
+        </div>
+
+        <div class="services-matrix">
+          <article class="matrix-card">
+            <span class="matrix-num">СТ. 01</span>
+            <h3>Військові справи та захист військовослужбовців</h3>
+            <p>Правовий захист військових, оскарження рішень ВЛК, виплати, звільнення та супровід родин.</p>
+          </article>
+          <article class="matrix-card">
+            <span class="matrix-num">СТ. 02</span>
+            <h3>Сімейні та земельні спори</h3>
+            <p>Поділ майна, аліменти, спадкові питання, земельні межі, оренда та визнання права власності.</p>
+          </article>
+          <article class="matrix-card">
+            <span class="matrix-num">СТ. 03</span>
+            <h3>Кримінальні, цивільні, господарські та корпоративні справи</h3>
+            <p>Побудова доказової позиції та представництво інтересів у судах усіх інстанцій.</p>
+          </article>
+          <article class="matrix-card">
+            <span class="matrix-num">СТ. 04</span>
+            <h3>Реєстрація, ліквідація та юридичний супровід підприємств</h3>
+            <p>Повний правовий супровід господарської діяльності, угод та корпоративних змін.</p>
+          </article>
+          <article class="matrix-card">
+            <span class="matrix-num">СТ. 05</span>
+            <h3>Підготовка об'єктів до аукціонів</h3>
+            <p>Юридичний аудит активів, перевірка обтяжень і підготовка документів для участі в торгах.</p>
+          </article>
+          <article class="matrix-card">
+            <span class="matrix-num">СТ. 06</span>
+            <h3>Широкий спектр індивідуальних адвокатських консультацій</h3>
+            <p>Персональний розбір ситуації, аналіз документів та чіткий алгоритм правових дій.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SLIDE 4: CONTACTS -->
+    <section class="slide slide-dark" id="slide-4" data-theme="dark" aria-label="Контакти та швидкий зв'язок">
+      <div class="slide-inner contacts-slide">
+        <div class="contacts-left">
+          <p class="slide-eyebrow">СЛАЙД 04 · ЗВ’ЯЗОК</p>
+          <h2 class="slide-title">Контакти та швидкий зв’язок</h2>
+          <div class="gold-line"></div>
+          <p class="contacts-note">
+            Звертайтеся за телефонами або електронною поштою для узгодження зручного часу особистої чи дистанційної консультації.
+          </p>
+          <div class="office-box">
+            <span class="contact-label">Адреса офісу</span>
+            <p class="office-address">м. Коломия, Івано-Франківська обл., вулиця Мазепи, 37а</p>
+          </div>
+        </div>
+
+        <div class="contacts-right">
+          <a href="tel:+380965557935" class="contact-row">
+            <span class="contact-label">Телефон 1 · Оксана Василівна</span>
+            <span class="contact-big">+380 96 555 79 35</span>
+          </a>
+          <a href="tel:+380961057533" class="contact-row">
+            <span class="contact-label">Телефон 2 · Богдан Богданович</span>
+            <span class="contact-big">+380 96 105 75 33</span>
+          </a>
+          <a href="mailto:ksyha1755@ukr.net" class="contact-row">
+            <span class="contact-label">Електронна пошта</span>
+            <span class="contact-big">ksyha1755@ukr.net</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <button type="button" class="exit-demo-btn" id="exit-demo-btn">Вийти з демо</button>
+
+  <script src="script.js"></script>
+</body>
+</html>

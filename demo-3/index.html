@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Інтерактивний Кодекс — Адвокати Лейб’юк Оксана Василівна та Богдан Богданович</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="paper-frame">
+    <!-- TOP DOSSIER BAR -->
+    <header class="dossier-bar">
+      <div class="dossier-left">
+        <span class="seal">Л &amp; Л</span>
+        <div>
+          <p class="dossier-code">КОДЕКС ПРАВОВОГО ЗАХИСТУ · ТОМ I</p>
+          <p class="dossier-location">м. Коломия, Івано-Франківська обл., вул. Мазепи, 37а</p>
+        </div>
+      </div>
+      <div class="dossier-right">
+        <a href="tel:+380965557935" class="top-phone">+380 96 555 79 35</a>
+        <span class="sep">·</span>
+        <a href="tel:+380961057533" class="top-phone">+380 96 105 75 33</a>
+      </div>
+    </header>
+
+    <!-- HERO DOSSIER -->
+    <section class="dossier-hero">
+      <div class="hero-text">
+        <span class="chapter-tag">ПРЕАМБУЛА · АДВОКАТСЬКЕ ДОСЬЄ</span>
+        <h1 class="dossier-title">
+          Адвокати <em>Лейб’юк Оксана Василівна</em> та <em>Лейб’юк Богдан Богданович</em>
+        </h1>
+        <p class="dossier-slogan">
+          Всі види юридичних та адвокатських послуг. Професійний захист ваших прав та інтересів.
+        </p>
+        <p class="dossier-intro">
+          Оберіть категорію вашої правової ситуації нижче — інтерактивний навігатор автоматично визначить профільного адвоката, план правових дій та прямий канал зв’язку.
+        </p>
+      </div>
+
+      <!-- ANIMATED THEMIS WITH SWAYING SCALES -->
+      <div class="themis-box" aria-hidden="true">
+        <div class="themis-status" id="themis-status">Рівновага права · Оберіть категорію</div>
+        <svg viewBox="0 0 320 340" fill="none" xmlns="http://www.w3.org/2000/svg" class="themis-svg">
+          <rect x="10" y="10" width="300" height="320" stroke="#C5A059" stroke-opacity="0.35" stroke-width="1"/>
+          <circle cx="160" cy="108" r="68" stroke="#C5A059" stroke-opacity="0.25" stroke-width="0.9" stroke-dasharray="3 4"/>
+
+          <!-- Themis Central Figure (Engraving Style) -->
+          <path d="M148 78 C148 65 172 65 172 78 C172 90 166 98 160 98 C154 98 148 90 148 78 Z" stroke="#1A1A1A" stroke-width="1.3" fill="#FAF7F2"/>
+          <!-- Blindfold -->
+          <path d="M147 75 Q160 79 173 75 L173 82 Q160 86 147 82 Z" fill="#C5A059" fill-opacity="0.3" stroke="#C5A059" stroke-width="1.2"/>
+          <path d="M173 78 C184 80 190 86 194 94" stroke="#C5A059" stroke-width="1" stroke-linecap="round"/>
+
+          <!-- Shoulders & Torso -->
+          <path d="M154 98 L154 110 M166 98 L166 110" stroke="#1A1A1A" stroke-width="1.2"/>
+          <path d="M154 110 C138 114 128 122 122 136 L112 290 L208 290 L198 136 C192 122 182 114 166 110" stroke="#1A1A1A" stroke-width="1.3" fill="#FAF7F2"/>
+          <path d="M126 168 Q160 178 194 168" stroke="#C5A059" stroke-width="1.4"/>
+          <path d="M144 174 C140 218 136 254 132 290" stroke="#1A1A1A" stroke-opacity="0.55" stroke-width="1"/>
+          <path d="M160 176 L160 290" stroke="#1A1A1A" stroke-opacity="0.65" stroke-width="1"/>
+          <path d="M176 174 C180 218 184 254 188 290" stroke="#1A1A1A" stroke-opacity="0.55" stroke-width="1"/>
+
+          <!-- Upright Sword behind / right hand -->
+          <line x1="216" y1="158" x2="216" y2="290" stroke="#C5A059" stroke-width="1.5"/>
+          <path d="M202 182 Q216 186 230 182" stroke="#C5A059" stroke-width="1.6" stroke-linecap="round"/>
+          <circle cx="216" cy="156" r="3" fill="#C5A059"/>
+
+          <!-- Scales Fulcrum (Top Center above outstretched arm) -->
+          <line x1="160" y1="30" x2="160" y2="52" stroke="#C5A059" stroke-width="1.3"/>
+          <circle cx="160" cy="52" r="4" fill="#FAF7F2" stroke="#C5A059" stroke-width="1.4"/>
+
+          <!-- SWAYING SCALES BEAM GROUP (pivots at 160, 52) -->
+          <g id="scales-beam" class="scales-beam">
+            <line x1="64" y1="52" x2="256" y2="52" stroke="#C5A059" stroke-width="1.8" stroke-linecap="round"/>
+            <circle cx="64" cy="52" r="3" fill="#C5A059"/>
+            <circle cx="256" cy="52" r="3" fill="#C5A059"/>
+
+            <!-- Left Pan (counter-rotates to stay level) -->
+            <g id="pan-left" class="scale-pan">
+              <line x1="64" y1="52" x2="46" y2="118" stroke="#C5A059" stroke-width="1"/>
+              <line x1="64" y1="52" x2="82" y2="118" stroke="#C5A059" stroke-width="1"/>
+              <line x1="64" y1="52" x2="64" y2="118" stroke="#C5A059" stroke-width="0.7" stroke-opacity="0.6"/>
+              <path d="M40 118 Q64 134 88 118 Z" stroke="#C5A059" stroke-width="1.4" fill="#C5A059" fill-opacity="0.16"/>
+            </g>
+
+            <!-- Right Pan (counter-rotates to stay level) -->
+            <g id="pan-right" class="scale-pan">
+              <line x1="256" y1="52" x2="238" y2="118" stroke="#C5A059" stroke-width="1"/>
+              <line x1="256" y1="52" x2="274" y2="118" stroke="#C5A059" stroke-width="1"/>
+              <line x1="256" y1="52" x2="256" y2="118" stroke="#C5A059" stroke-width="0.7" stroke-opacity="0.6"/>
+              <path d="M232 118 Q256 134 280 118 Z" stroke="#C5A059" stroke-width="1.4" fill="#C5A059" fill-opacity="0.16"/>
+            </g>
+          </g>
+
+          <!-- Base Pedestal -->
+          <line x1="76" y1="290" x2="244" y2="290" stroke="#1A1A1A" stroke-width="1.4"/>
+          <text x="160" y="312" text-anchor="middle" font-family="Cormorant Garamond, Georgia, serif" font-size="10.5" letter-spacing="4" fill="#6B6B6B">AEQUITAS · Л &amp; Л</text>
+        </svg>
+      </div>
+    </section>
+
+    <!-- INTERACTIVE CASE NAVIGATOR -->
+    <section class="navigator-section" aria-label="Інтерактивний навігатор справи">
+      <div class="section-label-row">
+        <span class="chapter-tag">ГЛАВА I · ІНТЕРАКТИВНИЙ НАВІГАТОР СПРАВИ</span>
+        <span class="section-hint">Натисніть на категорію для підбору рішення</span>
+      </div>
+
+      <!-- 4 SITUATION SELECTORS -->
+      <div class="case-tabs" role="tablist" aria-label="Категорії правових ситуацій">
+        <button type="button" class="case-tab is-selected" role="tab" aria-selected="true" data-case="military">
+          <span class="tab-code">СТ. 01</span>
+          <span class="tab-name">Військове право</span>
+          <span class="tab-sub">Захист військовослужбовців</span>
+        </button>
+
+        <button type="button" class="case-tab" role="tab" aria-selected="false" data-case="family">
+          <span class="tab-code">СТ. 02</span>
+          <span class="tab-name">Сімейні та земельні спори</span>
+          <span class="tab-sub">Майно, родина, земля</span>
+        </button>
+
+        <button type="button" class="case-tab" role="tab" aria-selected="false" data-case="business">
+          <span class="tab-code">СТ. 03</span>
+          <span class="tab-name">Бізнес та аукціони</span>
+          <span class="tab-sub">Супровід підприємств і торгів</span>
+        </button>
+
+        <button type="button" class="case-tab" role="tab" aria-selected="false" data-case="criminal">
+          <span class="tab-code">СТ. 04</span>
+          <span class="tab-name">Кримінальні та цивільні справи</span>
+          <span class="tab-sub">Захист у судах усіх інстанцій</span>
+        </button>
+      </div>
+
+      <!-- DYNAMIC RESULT AREA -->
+      <div class="navigator-grid">
+        <!-- LAWYERS COLUMN (DYNAMICALLY HIGHLIGHTED) -->
+        <div class="lawyers-column">
+          <p class="col-heading">Профільні адвокати</p>
+
+          <article class="lawyer-dossier" id="lawyer-bohdan" data-lawyer="bohdan">
+            <div class="lawyer-badge">Профільний фахівець для вашої справи</div>
+            <div class="lawyer-top">
+              <span class="lawyer-code">АДВОКАТ · Б. Б. Л.</span>
+              <span class="lawyer-tag">Військовий адвокат</span>
+            </div>
+            <h3>Лейб’юк Богдан Богданович</h3>
+            <p class="lawyer-spec">
+              Військові справи, кримінальні провадження, господарські та корпоративні спори.
+            </p>
+            <a href="tel:+380961057533" class="lawyer-tel">+380 96 105 75 33</a>
+          </article>
+
+          <article class="lawyer-dossier" id="lawyer-oksana" data-lawyer="oksana">
+            <div class="lawyer-badge">Профільний фахівець для вашої справи</div>
+            <div class="lawyer-top">
+              <span class="lawyer-code">АДВОКАТ · О. В. Л.</span>
+              <span class="lawyer-tag">Цивільне та сімейне право</span>
+            </div>
+            <h3>Лейб’юк Оксана Василівна</h3>
+            <p class="lawyer-spec">
+              Сімейні спори, цивільні та земельні справи, юридичний супровід підприємств та аукціонів.
+            </p>
+            <a href="tel:+380965557935" class="lawyer-tel">+380 96 555 79 35</a>
+          </article>
+        </div>
+
+        <!-- ACTION PLAN DOSSIER -->
+        <div class="plan-panel" id="plan-panel" aria-live="polite">
+          <div class="plan-header">
+            <span class="plan-article" id="plan-article">СТАТТЯ 01 · ВІЙСЬКОВЕ ПРАВО</span>
+            <h2 class="plan-title" id="plan-title">Військові справи та захист військовослужбовців</h2>
+            <p class="plan-lead" id="plan-lead">
+              Пріоритетний супровід військовослужбовців та їхніх сімей з оперативним реагуванням і підготовкою необхідних правових документів.
+            </p>
+          </div>
+
+          <div class="plan-steps-wrap">
+            <p class="col-heading">Конкретні дії адвоката</p>
+            <ol class="plan-steps" id="plan-steps"></ol>
+          </div>
+
+          <div class="plan-cta-box">
+            <div class="cta-meta">
+              <span class="cta-label">Рекомендований адвокат</span>
+              <strong class="cta-lawyer-name" id="cta-lawyer-name">Лейб’юк Богдан Богданович</strong>
+            </div>
+            <div class="cta-buttons">
+              <a href="tel:+380961057533" class="cta-primary" id="cta-call-btn">
+                Зв’язатися: +380 96 105 75 33
+              </a>
+              <a href="mailto:ksyha1755@ukr.net" class="cta-secondary">
+                Написати на e-mail
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FULL REGISTRY OF 6 SERVICES -->
+    <section class="registry-section">
+      <div class="section-label-row">
+        <span class="chapter-tag">ГЛАВА II · ПОВНИЙ РЕЄСТР ПОСЛУГ</span>
+      </div>
+
+      <div class="registry-list">
+        <div class="registry-item">
+          <span class="reg-num">§ 01</span>
+          <span class="reg-title">Військові справи та захист військовослужбовців</span>
+        </div>
+        <div class="registry-item">
+          <span class="reg-num">§ 02</span>
+          <span class="reg-title">Сімейні та земельні спори</span>
+        </div>
+        <div class="registry-item">
+          <span class="reg-num">§ 03</span>
+          <span class="reg-title">Ведення кримінальних, цивільних, господарських та корпоративних справ</span>
+        </div>
+        <div class="registry-item">
+          <span class="reg-num">§ 04</span>
+          <span class="reg-title">Реєстрація, ліквідація та комплексний юридичний супровід підприємств</span>
+        </div>
+        <div class="registry-item">
+          <span class="reg-num">§ 05</span>
+          <span class="reg-title">Підготовка об'єктів до аукціонів</span>
+        </div>
+        <div class="registry-item">
+          <span class="reg-num">§ 06</span>
+          <span class="reg-title">Широкий спектр індивідуальних адвокатських консультацій</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER CONTACTS -->
+    <footer class="dossier-footer">
+      <div class="footer-item">
+        <span class="footer-key">Телефони</span>
+        <div class="footer-links">
+          <a href="tel:+380965557935">+380 96 555 79 35</a>
+          <a href="tel:+380961057533">+380 96 105 75 33</a>
+        </div>
+      </div>
+      <div class="footer-item">
+        <span class="footer-key">E-mail</span>
+        <a href="mailto:ksyha1755@ukr.net" class="footer-single">ksyha1755@ukr.net</a>
+      </div>
+      <div class="footer-item">
+        <span class="footer-key">Адреса</span>
+        <span class="footer-single">м. Коломия, Івано-Франківська обл., вулиця Мазепи, 37а</span>
+      </div>
+    </footer>
+  </div>
+
+  <button type="button" class="exit-demo-btn" id="exit-demo-btn">Вийти з демо</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
